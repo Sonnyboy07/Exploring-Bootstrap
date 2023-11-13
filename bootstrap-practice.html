@@ -3,10 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap Exploring</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand fw-bold" href="#">NiX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#Services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#About">About</a>
+                  </li>   
+          </div>
+        </div>
+      </nav>
+    <!-- HERO SECTION -->
+
+    <header class="bg-secondary p-5 text-white">
+        <div class="row mt-5">
+            <div class="col-md-7 my-auto">
+                <h1 class="display-3"> <span class="fw-bold">NiX</h1>
+        <p>Make your ideas come to life with <strong>NiX.</strong> </p>
+        <button class="btn btn-light text-primary fw-bold">Explore NiX</button>
+        </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i0.wp.com/techbooky.com/wp-content/uploads/2020/11/frontend_webdeveloper.jpg?w=1920&ssl=1" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallpaperaccess.com/full/3239444.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.cloudways.com/blog/wp-content/uploads/How-to-Sell-Website-Maintenance-Services.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+
+    <!-- SERVICES -->
+
+    <section id="Services" class="container py-5">
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <h2 class="fw-bold text-center">Our Services</h2>
+             </div>
+            </div>
+            <div class="row">
+            <div class="col-md-4 d-flex">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="fw-bold">Web Design</h3>
+                        <img data-aos="fade-down" data-aos-duration="1000" class="img-thumbnail my-3" src="https://glasbans.com/assets/images/services/web-design-01.jpg" alt="">
+                        <p>Web design refers to the design of websites. It usually refers to the user experience aspects of website development rather than software development. Web design used to be focused on designing websites for desktop browsers; however, since the mid-2010s, design for mobile and tablet browsers has become ever-increasingly important.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="fw-bold">Web Maintenance</h3>
+                        <img data-aos="fade-down" data-aos-duration="1000" class="img-thumbnail my-3" src="https://southeastgas.com/wp-content/uploads/Website-Maintenance-Banner.jpg" alt="">
+                        <p>Website maintenance is the performance of tasks required to keep your website functioning properly and up to date. It involves regularly checking your website for issues, correcting any issues, and making updates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="fw-bold">Web Security</h3>
+                        <img data-aos="fade-down" data-aos-duration="1000" class="img-thumbnail my-3" src="https://www.50marketing.com/wp-content/uploads/web-security.jpg" alt="">
+                        <p>Website security requires vigilance in all aspects of website design and usage. This introductory article won't make you a website security guru, but it will help you understand where threats come from, and what you can do to harden your web application against the most common attacks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- ABOUT -->
+
+   <section id="About" class="container p-5">
+    <div class="row mb-3">
+        <h2 class="fw-bold text-center mb-5">About</h2>
+        <p> <p>NiX is the brainchild of our 3 founders: Avishai Abrahami, Nadav Abrahami and Giora Kaplan.  The idea was born (on the beach) while they were building a website to be the basis of another start-up idea. The tech savvy trio quickly discovered that creating their own website was difficult, frustrating and very costly. It was this agonizing experience that led them to a light bulb moment—to build a platform that empowered anyone to create their own website with no coding or design skills needed.
+            In 2006, NiX was born. Since then, we've evolved into the leader in website creation, committed to providing the latest features and capabilities that enable anyone to create a professional online presence</p>
+        </p>
+        <div class="row">
+            <div class="col-md-6 d-flex">
+                <div class="card-body">
+                    <img data-aos="fade-down-right" data-aos-duration="1000" class="img-thumbnail my-3" src="https://static.wixstatic.com/media/9ab0d1_9b5e30837ccf4e15a865c291b0ce8e43~mv2.jpeg/v1/fill/w_479,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/First.jpeg" alt="">
+                    <p> Succeed online with the right creation platform The go-to creation platform complete with a full of built-in tools for anyone looking to build, manage and grow their online presence.</p>
+                    <button class="btn btn-link text-primary fw-bold">Explore NiX</button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex">
+                <div class="card-body">
+                    <img data-aos="fade-down-right" data-aos-duration="1000" class="img-thumbnail my-3" src="https://static.wixstatic.com/media/9ab0d1_66ad4f00b40d48f99160a36e5516734c~mv2.jpeg/v1/fill/w_479,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/second.jpeg" alt="">
+                    <p>An end-to-end web creation platform for agencies and freelancers who create, develop, and manage digital experiences for clients at any scale.</p>
+                    <button class="btn btn-link text-primary fw-bold">Explore NiX Studio</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+   </section>
+
+   <!-- FOOTER -->
+   <footer class="bg-secondary text-white">
+    <div class="container p-5 text-center">
+        <h4>©2023 | NiX.com | ™</h4>
+        <hr>
+        <p> 7F, Ortigas, Pasig City</p>
+        <p>info@nix.com</p>
+
+    </div>
+
+
+   
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
